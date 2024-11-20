@@ -16,11 +16,17 @@ Dependencies
 Ensure the following Python libraries are installed:
 
 pandas
+
 numpy
+
 matplotlib
+
 seaborn
+
 plotly
+
 scikit-learn
+
 Setup
 
 Clone this repository or download the code files.
@@ -30,7 +36,7 @@ Upload datasets to your Google Drive for access.
 Use Google Colab or a local Python environment.
 
 ### Dataset Description
-#### 1. Casualty Dataset
+#### 1. Casuality Dataset
 Contains details about individuals involved in accidents, including:
 
 Severity
@@ -39,7 +45,31 @@ Age group
 
 Gender
 
-Casualty class (e.g., pedestrian, driver)
+Casuality class (e.g., pedestrian, driver)
 
 #### 2. Collision Dataset
 Provides location and contextual information for accidents:
+
+GPS coordinates
+
+Date and time
+
+Weather and light conditions
+
+#### 3. Vehicle Dataset
+Contains details about vehicles involved:
+
+Vehicle type
+
+Direction of travel
+
+### Project Workflow
+#### 1. Importing Libraries
+We import essential libraries for data manipulation (pandas), numerical operations (numpy), and visualization (matplotlib, seaborn, plotly). Warnings are suppressed to enhance readability.
+
+##### 2. Loading Datasets
+Datasets are loaded from Google Drive after mounting.
+
+#### 3. Dataset Exploration
+Basic exploration includes checking the structure, data types, and summary statistics.
+
