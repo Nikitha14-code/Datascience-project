@@ -5,6 +5,9 @@
 ### Introduction:
 This project analyzes road accident data collected over the last five years to identify patterns, assess risk factors, and detect high-risk accident zones. The analysis includes:
 
+![image](https://github.com/user-attachments/assets/7fba55c1-1b18-44b4-adcf-1280c831acc8)
+
+
 Cleaning and pre-processing datasets.
 
 Deriving meaningful features like accident severity and clustering hotspots.
