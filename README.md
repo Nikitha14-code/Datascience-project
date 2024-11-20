@@ -73,3 +73,39 @@ Datasets are loaded from Google Drive after mounting.
 #### 3. Dataset Exploration
 Basic exploration includes checking the structure, data types, and summary statistics.
 
+#### 4. Pre-processing
+##### Step 4.1: Identify Missing Values
+Columns with missing values are identified.
+##### Step 4.2: Drop Columns
+Columns with excessive missing data in the vehicle dataset are removed.
+##### Step 4.3: Impute Missing Values
+Missing values in the collision dataset are filled with mean values.
+
+#### 5. Merging Datasets
+The datasets are merged on the accident_index column for comprehensive analysis.
+
+#### 6. Feature Engineering
+##### Step 6.1: Extract Temporal Features
+Dates are converted into day, month, and year features.
+##### Step 6.2: Create Composite Severity Score
+A weighted severity score is calculated.
+##### Step 6.3: Simplify Features
+Weather and light conditions are simplified for easier interpretation.
+
+#### 7. Clustering for Hotspot Detection
+KMeans is used to cluster accident locations into high-risk areas.
+
+#### 8. Exploratory Data Analysis (EDA)
+The data is visualized using plotly for interactive plots.
+
+Casualty Severity Distribution
+
+Casualty by Age Group
+
+Casualty Class by Gender
+
+Accidents by Hour, Day, Month, and Year
+
+Severity Score Distribution
+
+Severity Score by Weather Condition
