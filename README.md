@@ -2,7 +2,7 @@
 
 ## Project Title : ACCIDENT HOTSPOT DETECTION AND RISK PREDICTION
 
-### Introduction:
+## Introduction:
 This project analyzes road accident data collected over the last five years to identify patterns, assess risk factors, and detect high-risk accident zones. The analysis includes:
 
 ![image](https://github.com/user-attachments/assets/7fba55c1-1b18-44b4-adcf-1280c831acc8)
@@ -14,7 +14,7 @@ Deriving meaningful features like accident severity and clustering hotspots.
 
 Conducting exploratory data analysis (EDA) to visualize trends.
 
-### Loading Datasets
+## Loading Datasets
 Dependencies
 Ensure the following Python libraries are installed:
 
@@ -38,8 +38,8 @@ Upload datasets to your Google Drive for access.
 
 Use Google Colab or a local Python environment.
 
-### Dataset Description
-#### 1. Casuality Dataset
+## Dataset Description
+### 1. Casuality Dataset
 Contains details about individuals involved in accidents, including:
 
 Severity
