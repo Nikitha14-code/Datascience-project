@@ -22,6 +22,24 @@ seaborn
 plotly
 scikit-learn
 Setup
+
 Clone this repository or download the code files.
+
 Upload datasets to your Google Drive for access.
+
 Use Google Colab or a local Python environment.
+
+### Dataset Description
+#### 1. Casualty Dataset
+Contains details about individuals involved in accidents, including:
+
+Severity
+
+Age group
+
+Gender
+
+Casualty class (e.g., pedestrian, driver)
+
+#### 2. Collision Dataset
+Provides location and contextual information for accidents:
