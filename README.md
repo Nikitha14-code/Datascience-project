@@ -1,8 +1,6 @@
 # Datascience- Final Project
-
+---
 ## Project Title : ACCIDENT HOTSPOT DETECTION AND RISK PREDICTION
-
-### README: Accident Hotspot Detection and Risk Prediction Project
 
 ---
 
