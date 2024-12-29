@@ -2,113 +2,143 @@
 
 ## Project Title : ACCIDENT HOTSPOT DETECTION AND RISK PREDICTION
 
-## Introduction:
-This project analyzes road accident data collected over the last five years to identify patterns, assess risk factors, and detect high-risk accident zones. The analysis includes:
+### README: Accident Hotspot Detection and Risk Prediction Project
 
-![image](https://github.com/user-attachments/assets/7fba55c1-1b18-44b4-adcf-1280c831acc8)
+---
 
+#### Project Title:
+**Accident Hotspot Detection and Risk Prediction**
 
-Cleaning and pre-processing datasets.
+---
 
-Deriving meaningful features like accident severity and clustering hotspots.
+#### Project Description:
+This project analyzes road traffic accident data to identify high-risk areas (hotspots), predict accident severity, and forecast future accident trends. Using clustering techniques, classification models, and time-series forecasting, the project provides actionable insights for policymakers to improve road safety and deploy resources effectively.
 
-Conducting exploratory data analysis (EDA) to visualize trends.
+---
 
-## Loading Datasets
-Dependencies
-Ensure the following Python libraries are installed:
+#### Objectives:
+1. Detect accident hotspots using clustering algorithms.
+2. Predict accident severity levels based on environmental, vehicular, and demographic factors.
+3. Forecast future accident trends to enable proactive safety measures.
 
-pandas
+---
 
-numpy
+#### Features:
+### - Clustering:
+  - Identifies accident hotspots using K-Means and DBSCAN clustering techniques.
+  - Visualizes geospatial clusters with heatmaps and scatter plots.
+  
+#### - Classification:
+  - Predicts accident severity using Logistic Regression, Random Forest, and XGBoost.
+  - Evaluates models with precision, recall, F1-score, and confusion matrices.
 
-matplotlib
+### - Forecasting:
+  - Forecasts accident trends with ARIMA and LSTM models.
+  - Provides insights into temporal patterns and long-term dependencies.
 
-seaborn
+---
 
-plotly
+#### Dataset:
+The datasets are obtained from the UK Department for Transport's road safety data:
+1. **Casualty Dataset**: Demographic and severity details of casualties.
+2. **Collision Dataset**: Geospatial and environmental information about accidents.
+3. **Vehicle Dataset**: Details about vehicles involved in accidents.
 
-scikit-learn
+##### Dataset Preprocessing:
+- Addressed missing values using imputation (mean, mode, and forward-fill techniques).
+- Feature engineering for composite severity scores, time-based attributes, and urban indicators.
+- Scaled and encoded features for machine learning models.
 
-Setup
+---
 
-Clone this repository or download the code files.
+#### Methodology:
+### 1. Data Preprocessing:
+   - Cleaning and merging datasets.
+   - Feature extraction and dimensionality reduction.
 
-Upload datasets to your Google Drive for access.
+### 2. Clustering:
+   - Applied K-Means and DBSCAN for hotspot detection.
+   - Used the Elbow Method and k-distance graph for parameter tuning.
 
-Use Google Colab or a local Python environment.
+### 3. Classification:
+   - Trained Logistic Regression, Random Forest, and XGBoost models.
+   - Performed hyperparameter tuning and feature importance analysis.
 
-## Dataset Description
-### 1. Casuality Dataset
-Contains details about individuals involved in accidents, including:
+### 4. Forecasting:
+   - Built ARIMA models for linear trend analysis.
+   - Developed LSTM models for capturing long-term dependencies.
 
-Severity
+---
 
-Age group
+#### Results:
+### 1. Clustering:
+   - Identified 10 high-risk accident clusters, primarily in urban centers.
+   - DBSCAN effectively captured irregularly shaped clusters and noise.
 
-Gender
+### 2. Classification:
+   - XGBoost achieved the best accuracy (89%) and balanced precision-recall metrics.
+   - Weather conditions, road surface types, and time of day were significant predictors.
 
-Casuality class (e.g., pedestrian, driver)
+### 3. Forecasting:
+   - ARIMA provided accurate short-term forecasts, while LSTM excelled in long-term trend prediction.
 
-#### 2. Collision Dataset
-Provides location and contextual information for accidents:
+---
 
-GPS coordinates
+#### Technologies Used:
+### - Programming Language: Python
+### - Libraries:
+  - Data Manipulation: `pandas`, `numpy`
+  - Visualization: `matplotlib`, `seaborn`, `plotly`
+  - Machine Learning: `scikit-learn`, `XGBoost`
+  - Time-Series Analysis: `statsmodels`, `tensorflow`
 
-Date and time
+---
 
-Weather and light conditions
+#### Installation and Setup:
+### 1. Clone the repository:
+   ```
+   git clone https://github.com/username/accident-hotspot-detection.git
+   cd accident-hotspot-detection
+   ```
+### 2. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+### 3. Ensure the `data/` directory contains the required datasets.
 
-#### 3. Vehicle Dataset
-Contains details about vehicles involved:
+---
 
-Vehicle type
+#### Usage:
+### 1. Exploratory Data Analysis:
+   - Run the `EDA.ipynb` notebook to explore the datasets and their features.
+   
+### 2. Clustering:
+   - Execute the `clustering_analysis.ipynb` notebook to generate hotspot visualizations.
+   
+### 3. Classification:
+   - Use the `classification_models.ipynb` notebook to train and evaluate severity prediction models.
+   
+### 4. Forecasting:
+   - Open `forecasting_models.ipynb` to predict future accident trends.
 
-Direction of travel
+---
 
-### Project Workflow
-#### 1. Importing Libraries
-We import essential libraries for data manipulation (pandas), numerical operations (numpy), and visualization (matplotlib, seaborn, plotly). Warnings are suppressed to enhance readability.
+#### Results Visualization:
+### - Clustering Outputs: 
+Geospatial heatmaps and scatter plots of accident hotspots.
+### - Classification Metrics: 
+Accuracy, precision, recall, and confusion matrices.
+### - Forecasting Trends: 
+Time-series plots comparing predicted vs. actual accident counts.
 
-##### 2. Loading Datasets
-Datasets are loaded from Google Drive after mounting.
+---
 
-#### 3. Dataset Exploration
-Basic exploration includes checking the structure, data types, and summary statistics.
+#### Future Work:
+1. Integrate real-time traffic and weather data for dynamic forecasting.
+2. Explore lightweight models for faster deployment on edge devices.
+3. Expand the scope to include rural areas and semi-urban regions.
 
-#### 4. Pre-processing
-##### Step 4.1: Identify Missing Values
-Columns with missing values are identified.
-##### Step 4.2: Drop Columns
-Columns with excessive missing data in the vehicle dataset are removed.
-##### Step 4.3: Impute Missing Values
-Missing values in the collision dataset are filled with mean values.
+---
 
-#### 5. Merging Datasets
-The datasets are merged on the accident_index column for comprehensive analysis.
-
-#### 6. Feature Engineering
-##### Step 6.1: Extract Temporal Features
-Dates are converted into day, month, and year features.
-##### Step 6.2: Create Composite Severity Score
-A weighted severity score is calculated.
-##### Step 6.3: Simplify Features
-Weather and light conditions are simplified for easier interpretation.
-
-#### 7. Clustering for Hotspot Detection
-KMeans is used to cluster accident locations into high-risk areas.
-
-#### 8. Exploratory Data Analysis (EDA)
-The data is visualized using plotly for interactive plots.
-
-Casualty Severity Distribution
-
-Casualty by Age Group
-
-Casualty Class by Gender
-
-Accidents by Hour, Day, Month, and Year
-
-Severity Score Distribution
-
-Severity Score by Weather Condition
+#### License:
+This project is licensed under the MIT License.
