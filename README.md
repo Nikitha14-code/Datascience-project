@@ -83,7 +83,8 @@ The datasets are obtained from the UK Department for Transport's road safety dat
 ---
 
 #### Technologies Used:
-### - Programming Language: Python
+### - Programming Language: 
+Python
 ### - Libraries:
   - Data Manipulation: `pandas`, `numpy`
   - Visualization: `matplotlib`, `seaborn`, `plotly`
