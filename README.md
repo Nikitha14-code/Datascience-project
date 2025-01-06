@@ -4,23 +4,23 @@
 
 ---
 
-#### Project Title:
+## Project Title:
 **Accident Hotspot Detection and Risk Prediction**
 
 ---
 
-#### Project Description:
+## Project Description:
 This project analyzes road traffic accident data to identify high-risk areas (hotspots), predict accident severity, and forecast future accident trends. Using clustering techniques, classification models, and time-series forecasting, the project provides actionable insights for policymakers to improve road safety and deploy resources effectively.
 
 ---
 
-#### Objectives:
+## Objectives:
 1. Detect accident hotspots using clustering algorithms.
 2. Predict accident severity levels based on environmental, vehicular, and demographic factors.
 3. Forecast future accident trends to enable proactive safety measures.
 
 ---
-#### Technologies Used:
+## Technologies Used:
 ### - Programming Language: 
 Python
 ### - Libraries:
@@ -31,7 +31,7 @@ Python
 
 ---
 
-#### Features:
+## Features:
 
 #### - Classification:
   - Predicts accident severity using Logistic Regression, Random Forest, and XGBoost.
@@ -49,20 +49,20 @@ Python
 
 ---
 
-#### Dataset:
+## Dataset:
 The datasets are obtained from the UK Department for Transport's road safety data:
 1. **Casualty Dataset**: Demographic and severity details of casualties.
 2. **Collision Dataset**: Geospatial and environmental information about accidents.
 3. **Vehicle Dataset**: Details about vehicles involved in accidents.
 
-##### Dataset Preprocessing:
+### Dataset Preprocessing:
 - Addressed missing values using imputation (mean, mode, and forward-fill techniques).
 - Feature engineering for composite severity scores, time-based attributes, and urban indicators.
 - Scaled and encoded features for machine learning models.
 
 ---
 
-#### Methodology:
+## Methodology:
 ### 1. Data Preprocessing:
    - Cleaning and merging datasets.
    - Feature extraction and dimensionality reduction.
@@ -81,7 +81,7 @@ The datasets are obtained from the UK Department for Transport's road safety dat
 
 ---
 
-#### Results:
+## Results:
 
 ### 1. Classification:
    - XGBoost achieved the best accuracy (82%) and balanced precision-recall metrics.
@@ -98,7 +98,7 @@ The datasets are obtained from the UK Department for Transport's road safety dat
 
 ---
 
-#### Results Visualization:
+## Results Visualization:
 ### - Clustering Outputs: 
 Geospatial heatmaps and scatter plots of accident hotspots.
 ### - Classification Metrics: 
@@ -108,12 +108,12 @@ Time-series plots comparing predicted vs. actual accident counts.
 
 ---
 
-#### Future Work:
+## Future Work:
 1. Integrate real-time traffic and weather data for dynamic forecasting.
 2. Explore lightweight models for faster deployment on edge devices.
 3. Expand the scope to include rural areas and semi-urban regions.
 
 ---
 
-#### License:
+## License:
 This project is licensed under the MIT License.
