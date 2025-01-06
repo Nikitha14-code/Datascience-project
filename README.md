@@ -22,13 +22,16 @@ This project analyzes road traffic accident data to identify high-risk areas (ho
 ---
 
 #### Features:
+
+#### - Classification:
+  - Predicts accident severity using Logistic Regression, Random Forest, and XGBoost.
+  - Evaluates models with precision, recall, F1-score, and confusion matrices.
+
+
 ### - Clustering:
   - Identifies accident hotspots using K-Means and DBSCAN clustering techniques.
   - Visualizes geospatial clusters with heatmaps and scatter plots.
   
-#### - Classification:
-  - Predicts accident severity using Logistic Regression, Random Forest, and XGBoost.
-  - Evaluates models with precision, recall, F1-score, and confusion matrices.
 
 ### - Forecasting:
   - Forecasts accident trends with ARIMA and LSTM models.
@@ -54,13 +57,13 @@ The datasets are obtained from the UK Department for Transport's road safety dat
    - Cleaning and merging datasets.
    - Feature extraction and dimensionality reduction.
 
-### 2. Clustering:
-   - Applied K-Means and DBSCAN for hotspot detection.
-   - Used the Elbow Method and k-distance graph for parameter tuning.
-
-### 3. Classification:
+### 2. Classification:
    - Trained Logistic Regression, Random Forest, and XGBoost models.
    - Performed hyperparameter tuning and feature importance analysis.
+
+### 3. Clustering:
+   - Applied K-Means and DBSCAN for hotspot detection.
+   - Used the Elbow Method and k-distance graph for parameter tuning.
 
 ### 4. Forecasting:
    - Built ARIMA models for linear trend analysis.
@@ -69,13 +72,16 @@ The datasets are obtained from the UK Department for Transport's road safety dat
 ---
 
 #### Results:
-### 1. Clustering:
+
+### 1. Classification:
+   - XGBoost achieved the best accuracy (82%) and balanced precision-recall metrics.
+   - Weather conditions, road surface types, and time of day were significant predictors.
+
+     
+### 2. Clustering:
    - Identified 10 high-risk accident clusters, primarily in urban centers.
    - DBSCAN effectively captured irregularly shaped clusters and noise.
 
-### 2. Classification:
-   - XGBoost achieved the best accuracy (89%) and balanced precision-recall metrics.
-   - Weather conditions, road surface types, and time of day were significant predictors.
 
 ### 3. Forecasting:
    - ARIMA provided accurate short-term forecasts, while LSTM excelled in long-term trend prediction.
