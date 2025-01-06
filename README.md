@@ -20,6 +20,16 @@ This project analyzes road traffic accident data to identify high-risk areas (ho
 3. Forecast future accident trends to enable proactive safety measures.
 
 ---
+#### Technologies Used:
+### - Programming Language: 
+Python
+### - Libraries:
+  - Data Manipulation: `pandas`, `numpy`
+  - Visualization: `matplotlib`, `seaborn`, `plotly`
+  - Machine Learning: `scikit-learn`, `XGBoost`
+  - Time-Series Analysis: `statsmodels`, `tensorflow`
+
+---
 
 #### Features:
 
@@ -85,46 +95,6 @@ The datasets are obtained from the UK Department for Transport's road safety dat
 
 ### 3. Forecasting:
    - ARIMA provided accurate short-term forecasts, while LSTM excelled in long-term trend prediction.
-
----
-
-#### Technologies Used:
-### - Programming Language: 
-Python
-### - Libraries:
-  - Data Manipulation: `pandas`, `numpy`
-  - Visualization: `matplotlib`, `seaborn`, `plotly`
-  - Machine Learning: `scikit-learn`, `XGBoost`
-  - Time-Series Analysis: `statsmodels`, `tensorflow`
-
----
-
-#### Installation and Setup:
-### 1. Clone the repository:
-   ```
-   git clone https://github.com/username/accident-hotspot-detection.git
-   cd accident-hotspot-detection
-   ```
-### 2. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-### 3. Ensure the `data/` directory contains the required datasets.
-
----
-
-#### Usage:
-### 1. Exploratory Data Analysis:
-   - Run the `EDA.ipynb` notebook to explore the datasets and their features.
-   
-### 2. Clustering:
-   - Execute the `clustering_analysis.ipynb` notebook to generate hotspot visualizations.
-   
-### 3. Classification:
-   - Use the `classification_models.ipynb` notebook to train and evaluate severity prediction models.
-   
-### 4. Forecasting:
-   - Open `forecasting_models.ipynb` to predict future accident trends.
 
 ---
 
